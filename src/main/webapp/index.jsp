@@ -2,7 +2,7 @@
 <body>
 
 
-<jsp:forward page="WEB-INF/jsp/aut.jsp"/>
+<jsp:forward page="WEB-INF/jsp/ajaxAuh.jsp"/>
 
 
 </body>
