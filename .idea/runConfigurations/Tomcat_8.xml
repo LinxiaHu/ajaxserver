@@ -2,15 +2,16 @@
   <configuration default="false" name="Tomcat 8" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.28" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="C:/Program Files/Java/jdk1.7.0_15">
     <option name="UPDATING_POLICY" value="restart-server" />
     <deployment>
-      <file path="$PROJECT_DIR$/src/main/webapp">
+      <artifact name="ajaxserver:war">
         <settings>
           <option name="CONTEXT_PATH" value="/ajaxserver" />
         </settings>
-      </file>
+      </artifact>
     </deployment>
     <server-settings>
       <option name="BASE_DIRECTORY_NAME" value="Unnamed_ajaxserver_2" />
       <option name="DEPLOY_TOMCAT_APPS" value="true" />
+      <option name="HTTP_PORT" value="1025" />
     </server-settings>
     <predefined_log_file id="Tomcat" enabled="true" />
     <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -66,6 +67,10 @@
         <option name="PROGRAM_PARAMETERS" value="" />
       </SHUTDOWN>
     </ConfigurationWrapper>
-    <method />
+    <method>
+      <option name="BuildArtifacts" enabled="true">
+        <artifact name="ajaxserver:war" />
+      </option>
+    </method>
   </configuration>
 </component>
